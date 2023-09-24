@@ -19,4 +19,4 @@ Dichas funciones deberan ser pasadas como argumento a las funciones de las TADs
 | Lista circular             | -         | Sin empezar |
 | Pila                       | Pila.cpp  | Terminado   |
 | Cola                       | Cola.cpp  | Terminado   |
-| Arbol binario              | -         | Sin empezar |
+| Arbol binario              | Arbol.cpp | Terminado   |
