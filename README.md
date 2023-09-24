@@ -12,11 +12,11 @@ Dichas funciones deberan ser pasadas como argumento a las funciones de las TADs
 
 # Contenidos
 
-| TAD                        | Archivo   | Estado                     |
-| -------------------------- | --------- | -------------------------- |
-| Lista simplemente enlazada | Lista.cpp | Terminados metodos basicos |
-| Lista doblemente enlazada  | -         | Sin empezar                |
-| Lista circular             | -         | Sin empezar                |
-| Pila                       | -         | Sin empezar                |
-| Cola                       | -         | Sin empezar                |
-| Arbol binario              | -         | Sin empezar                |
+| TAD                        | Archivo   | Estado      |
+| -------------------------- | --------- | ----------- |
+| Lista simplemente enlazada | Lista.cpp | Terminado   |
+| Lista doblemente enlazada  | -         | Sin empezar |
+| Lista circular             | -         | Sin empezar |
+| Pila                       | Pila.cpp  | Terminado   |
+| Cola                       | -         | Sin empezar |
+| Arbol binario              | -         | Sin empezar |
