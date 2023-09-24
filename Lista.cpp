@@ -41,7 +41,7 @@ void agregarElemento(void *lista, void *elemento)
 void agregarElementoOrdenado(void *lista, void *elemento, int comparar(void *a, void *b))
 {
   void **auxLista = (void **)lista;
-  void **auxNodo = (void **)auxLista[LI_COLA];
+  void **auxNodo = (void **)auxLista[LI_CABEZA];
 
   void **nuevoNodo = (void **)crearNodo(elemento);
 
@@ -50,11 +50,27 @@ void agregarElementoOrdenado(void *lista, void *elemento, int comparar(void *a, 
     auxLista[LI_CABEZA] = nuevoNodo;
     auxLista[LI_COLA] = nuevoNodo;
   }
-  // else
-  // {
-  //   auxNodo[ND_SIGUIENTE] = nuevoNodo;
-  //   auxLista[LI_COLA] = nuevoNodo;
-  // }
+  else
+  {
+    void **prevNodo = nullptr;
+    while (auxNodo)
+    {
+      if (comparar(auxNodo[ND_ELEMENTO], nuevoNodo[ND_ELEMENTO]) > 0)
+        break;
+      prevNodo = auxNodo;
+      auxNodo = (void **)auxNodo[ND_SIGUIENTE];
+    }
+
+    nuevoNodo[ND_SIGUIENTE] = auxNodo;
+
+    if (prevNodo == nullptr)
+      auxLista[LI_CABEZA] = nuevoNodo;
+    else
+      prevNodo[ND_SIGUIENTE] = nuevoNodo;
+
+    if (auxNodo == nullptr)
+      auxLista[LI_COLA] = nuevoNodo;
+  }
 
   ++*(int *)auxLista[LI_LONGITUD];
 }
