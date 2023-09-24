@@ -18,5 +18,5 @@ Dichas funciones deberan ser pasadas como argumento a las funciones de las TADs
 | Lista doblemente enlazada  | -         | Sin empezar |
 | Lista circular             | -         | Sin empezar |
 | Pila                       | Pila.cpp  | Terminado   |
-| Cola                       | -         | Sin empezar |
+| Cola                       | Cola.cpp  | Terminado   |
 | Arbol binario              | -         | Sin empezar |
